@@ -5,8 +5,13 @@ function CreateArea() {
   return (
     <div>
       <form>
-        <input name="title" placeholder="Title" />
-        <textarea name="content" placeholder="Take a note..." rows="3" />
+        <input name="title" placeholder="Title" value={note.title} />
+        <textarea
+          name="content"
+          value={note.content}
+          placeholder="Take a note..."
+          rows="3"
+        />
         <button>Add</button>
       </form>
     </div>
