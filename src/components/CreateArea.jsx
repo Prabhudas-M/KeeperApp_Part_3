@@ -5,10 +5,11 @@ function CreateArea() {
 
   function handleChange(event) {
     const { name, value } = event.target;
-    setNote((preValue) => {
-      return { ...preValue, [name]: value };
+    setNote((prevNote) => {
+      return { ...prevNote, [name]: value };
     });
   }
+
   return (
     <div>
       <form>
